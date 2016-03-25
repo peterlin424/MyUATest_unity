@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F0FA29BE-4562-E0DF-1190-B7FBAD0846FC}") = "MyUATest_unity", "Assembly-CSharp.csproj", "{573A59C8-579F-1164-DE43-79F3541711DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{573A59C8-579F-1164-DE43-79F3541711DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{573A59C8-579F-1164-DE43-79F3541711DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{573A59C8-579F-1164-DE43-79F3541711DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{573A59C8-579F-1164-DE43-79F3541711DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
