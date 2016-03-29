@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class page1 : MonoBehaviour {
-
+	
+	private AndroidJavaObject activity;
 	private string pageName = "page1";
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -19,8 +21,15 @@ public class page1 : MonoBehaviour {
 		Debug.Log (pageName + " : " + bt_name);
 		switch (bt_name) {
 		case "bt_back":
+			SceneManager.LoadScene ("index");
+
+			/** Bridge_Index Activty */
+			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			activity = jc.GetStatic<AndroidJavaObject> ("currentActivity");
+			activity.Call("StartActivityByUnity", activity);
 			break;
 		case "bt_next":
+			SceneManager.LoadScene ("UnityPage2");
 			break;	
 		}
 	}
