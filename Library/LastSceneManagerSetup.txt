@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/UnityPage2.unity
+- path: Assets/Scenes/UnityPage1.unity
   isLoaded: 1
   isActive: 1

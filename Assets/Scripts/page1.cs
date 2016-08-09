@@ -21,12 +21,11 @@ public class page1 : MonoBehaviour {
 		Debug.Log (pageName + " : " + bt_name);
 		switch (bt_name) {
 		case "bt_back":
-			SceneManager.LoadScene ("index");
-
 			/** Bridge_Index Activty */
 			AndroidJavaClass jc = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
 			activity = jc.GetStatic<AndroidJavaObject> ("currentActivity");
 			activity.Call("StartActivityByUnity", activity);
+			SceneManager.LoadScene ("index");
 			break;
 		case "bt_next":
 			SceneManager.LoadScene ("UnityPage2");
